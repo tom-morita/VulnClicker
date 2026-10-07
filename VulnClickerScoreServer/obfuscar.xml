@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Obfuscator>
+
+  <Var name="InPath"
+       value="C:\Users\tom_m\source\repos\VulnClickerScoreServer\bin\Release\net10.0\publish" />
+
+  <Var name="OutPath"
+       value="C:\Users\tom_m\source\repos\VulnClickerScoreServer\bin\Release\net10.0\obfuscated" />
+
+  <Var name="KeepPublicApi" value="false" />
+  <Var name="HidePrivateApi" value="true" />
+
+  <Var name="RenameFields" value="true" />
+  <Var name="RenameProperties" value="false" />
+  <Var name="RenameEvents" value="false" />
+
+  <Var name="HideStrings" value="true" />
+  <Var name="ReuseNames" value="false" />
+  <Var name="UseUnicodeNames" value="false" />
+
+  <Var name="SkipSpecialName" value="true" />
+
+  <Module file="C:\Users\tom_m\source\repos\VulnClickerScoreServer\bin\Release\net10.0\publish\VulnClickerScoreServer.dll">
+
+  <!-- API入力モデル -->
+  <SkipType
+      name="VulnClickerScoreServer.Models.ScoreEntry"
+      skipMethods="true"
+      skipFields="true"
+      skipProperties="true"
+      skipEvents="true" />
+
+  <!-- Minimal APIハンドラー -->
+  <SkipType
+      name="Program/*"
+      skipMethods="true"
+      skipFields="true"
+      skipProperties="true"
+      skipEvents="true" />
+
+  <!-- JSONレスポンスで使用する匿名型 -->
+  <SkipType
+      name="&lt;>f__AnonymousType*"
+      skipMethods="true"
+      skipFields="true"
+      skipProperties="true"
+      skipEvents="true" />
+
+</Module>
+
+</Obfuscator>

@@ -1,0 +1,38 @@
+[
+  {
+    "Player": "OWASP Kansai",
+    "Score": 170,
+    "Hit": 17,
+    "Miss": 17,
+    "Combo": 17,
+    "Timestamp": "2026-09-22T15:30:00+09:00",
+    "Version": "1.0.0"
+  },
+  {
+    "Player": "sample player",
+    "Score": 120,
+    "Hit": 1,
+    "Miss": 1,
+    "Combo": 1,
+    "Timestamp": "2026-09-22T15:33:00+09:00",
+    "Version": "1.0.0"
+  },
+  {
+    "Player": "hello",
+    "Score": 110,
+    "Hit": 110,
+    "Miss": 10,
+    "Combo": 10,
+    "Timestamp": "2026-09-24T01:52:05+09:00",
+    "Version": "1.0.0"
+  },
+  {
+    "Player": "I_LOVE_dotNET",
+    "Score": 10,
+    "Hit": 11,
+    "Miss": 0,
+    "Combo": 11,
+    "Timestamp": "2026-09-24T01:53:10+09:00",
+    "Version": "1.0.0"
+  }
+]

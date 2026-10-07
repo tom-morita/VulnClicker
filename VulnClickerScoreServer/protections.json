@@ -1,0 +1,16 @@
+{
+  "Protections": [
+    {
+      "Name": "AntiILdasm",
+      "Enabled": true
+    },
+    {
+      "Name": "FullRenamer",
+      "Enabled": false
+    },
+    {
+      "Name": "StringsEncryption",
+      "Enabled": false
+    }
+  ]
+}
