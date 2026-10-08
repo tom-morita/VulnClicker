@@ -94,6 +94,28 @@ C# / .NET で開発された、Windows向けのシンプルなクリッカーゲ
 dotnet --version
 ```
 
+## 遊び方
+
+Release版の[Zipファイル](https://github.com/tom-morita/VulnClicker/tree/main/LatestRelease)をダウンロードします
+任意のフォルダに展開してください。
+ゲームアプリ VulnClickerScore.exe を起動する。
+外部からダウンロードしたexeファイルは、システムから警告が出ますので、"詳細"＞"はい"で実行の承認が必要です。
+
+スコアサーバー起動前にHTTPS証明書を設定が必要です
+
+```powershell
+cd .\VulnClicker_1.0.0\VulnClicker_1.0.0\VulnClickerScoreServer
+dotnet dev-certs https --check --trust
+dotnet dev-certs https
+dotnet dev-certs https --check --trust
+dotnet dev-certs https --trust
+```
+
+証明書を設定後、スコアサーバー VulnClickerScoreServer.exe を起動する。
+クライアントとサーバーが起動できれば遊ぶことができます。
+サーバーが起動できない場合、スコア登録機能が動きませんが、ゲーム自体を楽しむことはできます。
+
+
 ## リポジトリ構造
 
 ```text
