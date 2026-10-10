@@ -206,7 +206,70 @@ WireSharkで通信を観測することができればAPI仕様を把握する�
 
 ```
 
-# ビルド済みのファイルで遊ぶ場合は、以下の手順は不要(ご自身の環境でビルドしたい場合)
+# Windows環境ではなくMacを利用する場合
+
+1. macOS上でWindowsソフトウェアを実行するための[Wine](https://www.winehq.org/about)をダウンロードする
+
+https://github.com/Gcenx/macOS_Wine_builds/releases
+
+2. Wineをインストールする
+
+```
+cd ~/Downloads
+tar -xJf <ダウンロードしたファイル名>.tar.xz
+mv "Wine Staging.app" /Applications/
+```
+
+3. Wineを動作確認する
+
+```
+"/Applications/Wine Staging.app/Contents/Resources/wine/bin/wine" --version
+```
+
+ここで、システム設定から許可が必要
+
+4. VulnClicker ダウンロード
+
+```
+git clone https://github.com/tom-morita/VulnClicker.git
+cd VulnClicker
+cd LatestRelease
+unzip VulnClicker_1.0.0.zip
+```
+
+5. .NET 10をダウンロード
+
+Microsoft公式サイトから取得します。
+
+https://dotnet.microsoft.com/ja-jp/download/dotnet/10.0
+
+Apple Silicon Macの場合も、x64版WindowsアプリをWineで実行しているなら、x64版ランタイムを使います。
+
+6. Wineに.NET 10をインストール
+
+```
+cd ~/Downloads
+"/Applications/Wine Staging.app/Contents/Resources/wine/bin/wine" windowsdesktop-runtime-10.0.x-win-x64.exe
+```
+
+7. インストールできたか確認する
+
+```
+"/Applications/Wine Staging.app/Contents/Resources/wine/bin/wine" 'C:\Program Files\dotnet\dotnet.exe' --list-runtimes
+
+
+Microsoft.NETCore.App 10.0.x [...]
+Microsoft.WindowsDesktop.App 10.0.x [...]
+```
+
+8. VulnClickerを再実行
+
+```
+"/Applications/Wine Staging.app/Contents/Resources/wine/bin/wine" VulnClickerScore.exe
+```
+
+
+# Windows環境でビルドしたい場合(ビルド済みのファイルで遊ぶ場合は、以下の手順は不要)
 
 ## ゲームアプリのビルド
 
