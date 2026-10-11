@@ -71,7 +71,7 @@ C# / .NET で開発された、Windows向けのシンプルなクリッカーゲ
 ### .NETデコンパイルツール
 - [dnSpy](https://github.com/dnSpy/dnSpy/releases)：推奨
   - 使い方：[凄すぎて大草原不可避な.NET デコンパイラdnSpyを使ってみる](https://qiita.com/Tokeiya/items/54fbf30cb21c77c05c41)
-- [ILSpy](https://github.com/icsharpcode/ILSpy/releases)：動作未検証
+- [ILSpy](https://github.com/icsharpcode/ILSpy/releases)：macOS用
   - 使い方：[ILSpyで.NETのアセンブリを逆コンパイルしてソースコードを参照する C#](https://johobase.com/ilspy/)
     
 ### パケットキャプチャ
